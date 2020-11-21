@@ -81,6 +81,13 @@ FRONT PAGE
 .logo-link:hover{
  transform:  scale(1.1);
 }
+
+.logo-img{
+  border: var(--txt-c-accent)  solid 2px;
+  border-radius: 10%;
+  text-decoration: none;
+}
+
 .front-page {
   position: relative;
 }
@@ -901,8 +908,6 @@ transition: var(--animation-transition);
   align-items: center;
   margin-bottom: 15px;
   
- 
- 
 }
 .footer-my-infa{
   margin: 30px 30px 45px 30px;
