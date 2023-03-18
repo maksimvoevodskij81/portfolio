@@ -72,6 +72,7 @@ html {
 body {
   font-family: var(--font-main);
 }
+
 /*------------------------
 FRONT PAGE
 ----------------------*/
@@ -454,7 +455,9 @@ modals
   height: 100%;
   padding: 0 25px;
 }
-
+pre{
+  font-family: var(--font-main);
+}
 .project-modal-title {
   font-weight: bold;
   font-size: 20px;
@@ -504,7 +507,7 @@ modals
 
 .section-title {
   font-weight: bold;
-  font-size: 35px;
+  font-size: 29px;
   line-height: 42px;
   text-align: center;
   text-transform: uppercase;
@@ -547,7 +550,9 @@ modals
   width: 280px;
   margin: 20px 0;
 }
-
+.about-education_disply {
+  display: block !important;
+}
 .about-descr {
   font-weight: bold;
   font-size: 24px;
@@ -1026,9 +1031,10 @@ FOOTER
     align-items: flex-start;
   }
   .frontpage-myfoto {
-    width: 140px;
+    width: 150px;
     margin-right: 40px;
     margin-bottom: 0px;
+    border-radius: 5px;
   }
   .mobail-element {
     display: none !important;
@@ -1049,7 +1055,16 @@ FOOTER
   .about .container {
     position: relative;
   }
-
+  .about-education{
+    color: orange ;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    font-size: 20px; 
+    }
+.descr-width{
+  max-width: 600px;
+}
   .about-img-text {
     position: absolute;
     right: 22px;
@@ -1059,10 +1074,10 @@ FOOTER
   }
   /*about-tablet*/
   .about-img {
-    width: 361px;
-    height: 390px;
-    left: -105px;
-    top: 70px;
+    width: 316px;
+    height: 316px;
+    left: -69px;
+    top: -174px;
   }
 
   .about-img-container {
@@ -1076,9 +1091,7 @@ FOOTER
   }
 
   .about-descr {
-    font-size: 36px;
-    line-height: 43px;
-    margin-bottom: 60px;
+    font-size: 18px;
   }
 
   .about-text:last-child {
@@ -1240,7 +1253,7 @@ FOOTER
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    margin-top: 115px;
+    margin-top: 172px;
   }
   .experiens-contener {
     padding-left: 30px;
@@ -1248,8 +1261,7 @@ FOOTER
     order: 1;
     margin-left: 0px;
   }
-  .mobail-menu-items {
-  }
+
   .mobile-menu-item {
     margin-right: 35px;
   }
@@ -1283,8 +1295,9 @@ FOOTER
     position: absolute;
     z-index: 1;
     right: -80px;
-    bottom: 380px;
-    width: 256px;
+    bottom: 456px;
+    width: 100%;
+    border-radius: 5px;
   }
   .front-page-my-infa {
     order: 3;
@@ -1293,8 +1306,8 @@ FOOTER
 
   .frontpage-description {
     text-align: left;
-    width: 400px;
-    margin-bottom: 65px;
+    width: 505px;
+    margin-bottom: 40px;
   }
   .frontpage-galarybutton {
     width: 450px;
@@ -1315,7 +1328,7 @@ FOOTER
   .fronpage-laptop {
     position: absolute;
     bottom: -50px;
-    right: 280px;
+    right: 80px;
     z-index: 1;
   }
   .my-discreption {
@@ -1359,12 +1372,14 @@ FOOTER
   }
   /*about-desktop*/
   .about-title {
-    font-size: 70px;
+    margin: 0;
+    font-size: 34px;
     line-height: 84px;
     width: 620px;
-    margin-top: 0;
   }
-
+  .about-company{
+    text-transform: none;
+  }
   .about-text {
     width: 406px;
   }
@@ -1378,12 +1393,11 @@ FOOTER
   }
 
   .about .container {
-    flex-direction: row;
-    padding: 135px 10px;
-    justify-content: space-around;
+    padding: 32px 20px;
   }
 
   .about-projects-bar {
+    display: none !important;
     background: var(--c-accent);
     width: 159px;
     height: 465px;
@@ -1396,6 +1410,7 @@ FOOTER
   }
 
   .about-projects {
+
     z-index: 2;
   }
 
@@ -1408,6 +1423,7 @@ FOOTER
   }
 
   .about-projects-text {
+    display: none;
     font-weight: bold;
     font-size: 15px;
     line-height: 135%;
@@ -1419,15 +1435,16 @@ FOOTER
   .about-img-text {
     font-size: 250px;
     line-height: 300px;
-    right: -223px;
-    top: -23px;
+    right: -307px;
+    top: 430px;
     z-index: 1;
   }
 
   .about-img {
-    width: 421px;
-    height: 455px;
-    left: -35px;
+    width: 316px;
+    height: 316px;
+    left: -14px;
+    top: -398px;
   }
   /* callback-desctop*/
   .callback-form-container {
