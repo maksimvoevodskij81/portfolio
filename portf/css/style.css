@@ -458,7 +458,8 @@ modals
 pre{
   font-family: var(--font-main);
 }
-.project-modal-title {
+.project-modal-title,
+.project-modal-title_link {
   font-weight: bold;
   font-size: 20px;
   line-height: 24px;
@@ -468,7 +469,10 @@ pre{
   margin: 0 0 25px 0;
   display: block;
 }
-
+.project-modal-title_link:hover{
+background: transparent;
+  color: var(--txt-c-accent);
+}
 .project-modal-text {
   font-size: 16px;
   line-height: 145%;
@@ -538,7 +542,7 @@ pre{
   color: var(--c-grey);
   position: absolute;
   top: 15px;
-  right: 15px;
+  right: 25px;
   cursor: pointer;
 }
 
@@ -583,10 +587,7 @@ pre{
 }
 
 .about-img-container {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin-bottom: 20px;
+  display: none;
 }
 
 .about-img-text {
@@ -1074,14 +1075,17 @@ FOOTER
   }
   /*about-tablet*/
   .about-img {
-    width: 316px;
-    height: 316px;
-    left: -69px;
-    top: -174px;
+    width: 116px;
+    height: 116px;
+    top: -500px;
+    left: 600px
   }
-
   .about-img-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
     margin-bottom: 0;
+    position: relative;
   }
 
   .about-title {
@@ -1443,7 +1447,7 @@ FOOTER
   .about-img {
     width: 316px;
     height: 316px;
-    left: -14px;
+    left: 671px;
     top: -398px;
   }
   /* callback-desctop*/
@@ -1541,7 +1545,7 @@ FOOTER
     padding: 0px;
   }
   .project-modal-container {
-    padding: 95px;
+    padding: 30px;
   }
   /*sliders-desktop*/
   .swiper-container {
